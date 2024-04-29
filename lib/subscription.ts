@@ -10,7 +10,7 @@ export const getUserSubscription = async (email: string) => {
   if (!user) {
     return null;
   }
-  const isActive = user.stripoePriceId && user.stripeCurrentPeriodEnd?.getTime()! + DAY_IN_MS > Date.now();
+  const isActive = user.stripePriceId && user.stripeCurrentPeriodEnd?.getTime()! + DAY_IN_MS > Date.now();
   return {
     ...user,
     isActive
