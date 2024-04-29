@@ -15,6 +15,6 @@ model User {
   name                   String?
   stripeCustomerId       String?   @unique
   stripeSubscriptionId   String?   @unique
-  stripoePriceId         String?
+  stripePriceId          String?
   stripeCurrentPeriodEnd DateTime?
 }
